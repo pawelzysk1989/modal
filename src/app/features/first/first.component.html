@@ -1,5 +1,5 @@
-<app-modal [showModal]="showModal" (hide)="showModal = false">
-  <p>Modal content</p>
+<app-modal [showModal]="showModal" (hide)="closeModal()">
+  <ng-template #vcr></ng-template>
 </app-modal>
 
-<button (click)="showModal = true" class="show-modal-button">Show Modal</button>
+<button (click)="openModal()" class="show-modal-button">Show Modal</button>
